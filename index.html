@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lyrians/lyltip/lyltip.css">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+	<section>
+		<a href="#" class="tooltip" data-tooltip="Tooltip top position">Top</a>
+		<a href="#" class="tooltip" data-tooltip="Tooltip left position" data-tooltip-pos="left">Left</a>
+		<a href="#" class="tooltip" data-tooltip="Tooltip right position" data-tooltip-pos="right">Right</a>
+		<a href="#" class="tooltip" data-tooltip="Tooltip bottom position" data-tooltip-pos="bottom">Bottom</a>
+	</section>
+
+	<section>
+		<a href="#" class="tooltip" data-tooltip="Straight edges">Straight edges</a>
+		<a href="#" class="tooltip" data-tooltip="Straight edges">Default</a>
+	</section>
+
+	<section>
+		<a href="#" class="tooltip" data-tooltip="Default theme">Default</a>
+		<a href="#" class="tooltip tooltip-info" data-tooltip="Info theme">Info</a>
+		<a href="#" class="tooltip tooltip-success" data-tooltip="Success theme">Success</a>
+		<a href="#" class="tooltip tooltip-warning" data-tooltip="Warning theme">Warning</a>
+		<a href="#" class="tooltip tooltip-danger" data-tooltip="Danger theme">Danger</a>
+		<a href="#" class="tooltip tooltip-light" data-tooltip="Light theme">Light</a>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/Lyrians/lyltip/lyltip.js"></script>
+
+	<script>
+		$(".tooltip").lyltip({
+			rounded: false, // Rounded corners true/false
+			theme: "dark",  // Principal theme
+			themes: { 		// Custom elements themes
+				"tooltip-info": "info",
+				"tooltip-success": "success",
+				"tooltip-warning": "warning",
+				"tooltip-danger": "danger",
+				"tooltip-light": "light",
+			},
+			margin: 18
+		});
+	</script>
+</body>
+</html>
