@@ -43,7 +43,7 @@ $("element").lyltip({
 | success    | #20ac6b  |
 | dark       | #1D1F20  |
 | light      | #F8F9FA  |
-#Instalation
+# Instalation
 ```html
 <!-- Add styles in head -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lyrians/lyltip/lyltip.css">
