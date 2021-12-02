@@ -37,9 +37,9 @@ $("element").lyltip({
 ### Themes
 | Theme name | HEX Code |
 | :--------: | :------: |
-| info       | #FFFFFF  |
-| danger     | #FFFFFF  |
-| warning    | #FFFFFF  |
-| success    | #FFFFFF  |
-| dark       | #FFFFFF  |
-| light      | #FFFFFF  |
+| info       | #51daf6  |
+| danger     | #e05260  |
+| warning    | #ffd24d  |
+| success    | #20ac6b  |
+| dark       | #1D1F20  |
+| light      | #F8F9FA  |
