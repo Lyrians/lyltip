@@ -1,3 +1,5 @@
+// By: Axel Benitez (KaoruMishimaru)
+
 (function($){
 	$.fn.lyltip = function(options){
 		let settings = $.extend({
