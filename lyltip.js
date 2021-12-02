@@ -37,7 +37,7 @@
 
 			if(position === "left"){
 				posY = (elementY + elementHeight / 2) - (tooltipHeight / 2);
-				posX = (elementX - tooltipWidth - settings.margin + 8);
+				posX = (elementX - tooltipWidth - settings.margin);
 				tooltip.addClass("lyltip-position-left");
 			} else if(position === "right"){
 				posY = (elementY + elementHeight / 2) - (tooltipHeight / 2);
