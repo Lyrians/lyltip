@@ -1,4 +1,4 @@
-# lyltip
+# Lyltip - JQuery toolip plugin
 Lyltip | JQuery tooltip plugin | Themes, Easy configuration, Themes by elements
 
 Lyltip is a simple JQuery plugin to create tooltips.
