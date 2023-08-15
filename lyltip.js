@@ -9,14 +9,14 @@
 			themes: []
 		}, options);
 
-		this.mouseenter(function(){
+		this.on("focus mouseenter", function(){
 			// ELEMENT
 			let $this 				= $(this);
 			let text 				= $this.attr("data-tooltip");
 			let elementWidth 		= $this.outerWidth(true);
 			let elementHeight 		= $this.outerHeight();
-			let elementX 			= $this.position().left;
-			let elementY 			= $this.position().top;
+			let elementX 			= $this.offset().left;
+			let elementY 			= $this.offset().top;
 			let position 			= "top";
 
 			if($this.attr("data-tooltip-pos")){
@@ -74,10 +74,11 @@
 				display: 'none'
 			}).fadeIn(100);
 
-			$this.mouseleave(function(e){
+			$this.on("blur mouseleave", function(e){
 				tooltip.fadeOut(100).remove();
 			});
 		});
+		this.attr("tabindex",-1)
 
 		return this;
 	}
